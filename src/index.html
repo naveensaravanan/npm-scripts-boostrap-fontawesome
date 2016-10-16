@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>KOOPID</title>
 
     <!-- Bootstrap Fontawsome Integrated CSS -->
     <link href="css/main.css" rel="stylesheet">
@@ -22,61 +22,57 @@
     <![endif]-->
 </head>
 
-<body>
+<body style="position:relative;z-index:0;">
+  <div class="bg-slider" style="z-index:-1;">
+    <div class="carousel slide carousel-fade" data-ride="carousel">
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Npm-Bootstrap</a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
         </div>
-    </nav>
-
-    <div class="container">
-
-        <div class="starter-template">
-            <h1>Starter Template for npm scripts using below technologies</h1>
-
-
-            <div class="row" style="visibility: visible; animation-name: fadeInDownBig;">
-                <div class="col-sm-3 col-xs-6">
-                    <img class="img-circle" src="http://getbootstrap.com/apple-touch-icon.png" alt="Bootstrap">
-                    <h3>Bootstrap 3</h3>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <img class="img-circle" src="http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="Fontawesome">
-                    <h3>SASS</h3>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <span class="img-circle"><i class="fa fa-font-awesome fa-4x"></i></span>
-                    <h3>Font-awesome</h3>
-                </div>
-
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+        <!-- <div class="item">
+        </div>
+        <div class="item">
+        </div> -->
+    </div>
+</div>
+  </div>
+    <div id="page" class="subscribePage">
+      <header class="container">
+        <div class="brand-wrapper">
+          <img src="images/logo.png" alt="" class="center-block brand-logo">
+          <p class="brand-slogon">Search. Connect. Transact.</p>
+        </div>
+        <div class="subscriber-wrapper">
+          <div class="search-box">
+            <!-- <div class="center-block">
+            <input type="text" class="form-control field-search">
+            <input type="button" class="btn btn-primary btn-search">
+            </div> -->
+            <div class="input-group center-block">
+              <input type="text" class="form-control field-search" id="searchInput" aria-describedby="inputGroupSuccess3Status" pattern='^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$' required placeholder="Enter your Email address">
+              <input id="sBtn" type="button" class="input-group-addon btn-search" value="Subscribe" />
             </div>
-
-            <p>Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
+            <div id="error-msg" class="text-center error-msg"> </div>
+          </div>
+        </div>
+        <div class="txt-wrapper">
+          <img  src="images/mobile_im.png" class="center-block img-responsive mobile-view" alt="">
+          <a href="" class="twitter-icon"><img src="images/twitterIcon.png" class="center-block" alt=""></a>
         </div>
 
+      </header>
     </div>
     <!-- /.container -->
 
 
     <!-- Jquery, Bootstrap Integrated and minified JS -->
-    <script src="js/vendor.min.js"></script>
+    <script src="js/vendor.min.js" type="text/javascript"></script>
+    <script src="js/subscribe.js" type="text/javascript"></script>
 
 </body>
 
