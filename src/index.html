@@ -11,6 +11,7 @@
     <link rel="icon" href="images/favicon.ico">
 
     <title>NPM Scripts</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
 
     <!-- Bootstrap Fontawsome Integrated CSS -->
     <link href="css/main.css" rel="stylesheet">
@@ -24,60 +25,169 @@
 
 <body>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#">Npm-Bootstrap</a>
-              </div>
-              <div id="navbar" class="collapse navbar-collapse">
-                  <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Home</a></li>
-                      <li><a href="#about">About</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                  </ul>
-              </div>
-              <!--/.nav-collapse -->
-          </div>
-      </nav>
-
-      <div class="container">
-
-          <div class="starter-template">
-              <h1>Starter Template for npm scripts using below technologies</h1>
 
 
-              <div class="row" style="visibility: visible; animation-name: fadeInDownBig;">
-                  <div class="col-sm-3 col-xs-6">
-                      <img class="img-circle" src="http://getbootstrap.com/apple-touch-icon.png" alt="Bootstrap">
-                      <h3>Bootstrap 3</h3>
-                  </div>
-                  <div class="col-sm-3 col-xs-6">
-                      <img class="img-circle" src="http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="Fontawesome">
-                      <h3>SASS</h3>
-                  </div>
-                  <div class="col-sm-3 col-xs-6">
-                      <span class="img-circle"><i class="fa fa-font-awesome fa-4x"></i></span>
-                      <h3>Font-awesome</h3>
-                  </div>
+  <!-- Full Page Image Background Carousel Header -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+   <!-- Indicators -->
+   <!-- <ol class="carousel-indicators">
+     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+     <li data-target="#myCarousel" data-slide-to="1"></li>
+     <li data-target="#myCarousel" data-slide-to="2"></li>
+   </ol> -->
 
-              </div>
+   <!-- Wrapper for slides -->
+   <div class="carousel-inner">
+     <div class="item active">
+       <img src="images/slider1.jpg" alt="Los Angeles" style="width:100%;">
+       <div class="carousel-caption d-none d-md-block">
+    <h3>Lorem ipsum dolor sit amet, <span class="highlight">consectetur</span></h3>
 
-              <p>Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
-          </div>
+  </div>
+     </div>
 
+     <div class="item">
+       <img src="images/slider2.jpg" alt="Chicago" style="width:100%;">
+       <div class="carousel-caption d-none d-md-block">
+    <h3>Lorem ipsum dolor sit amet,<span class="highlight">consectetur</span></h3>
+
+  </div>
+     </div>
+
+     <div class="item">
+       <img src="images/slider3.jpg" alt="New york" style="width:100%;">
+       <div class="carousel-caption d-none d-md-block">
+    <h3>Lorem ipsum dolor sit amet,<span class="highlight">consectetur</span></h3>
+
+  </div>
+     </div>
+   </div>
+
+   <!-- Left and right controls -->
+   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+     <span class="glyphicon glyphicon-chevron-left"></span>
+     <span class="sr-only">Previous</span>
+   </a>
+   <a class="right carousel-control" href="#myCarousel" data-slide="next">
+     <span class="glyphicon glyphicon-chevron-right"></span>
+     <span class="sr-only">Next</span>
+   </a>
+   <div class="mouse"></div>
+ </div>
+
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Sri Ranga</a>
       </div>
-      <!-- test comment -->
-      <!-- /.container -->
+      <ul class="nav navbar-nav pull-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">What we do</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Gallery</a></li>
+          <li><a href="#">Faculties</a></li>
+            <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- About Section -->
+  <section id="about" class="about content-section alt-bg-light wow fadeInUp" data-wow-offset="10">
+      <div class="container">
+          <div class="row text-center">
+              <div class="col-md-12">
+                  <h2>About Sri Ranga</h2>
 
+                  <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of existence.</p>
+
+
+
+
+
+              </div><!-- /.col-md-12-->
+
+
+          </div><!-- /.row -->
+      </div><!-- /.container -->
+  </section><!-- /.section -->
+
+
+  <!-- Services Section -->
+  <section id="services" class="services content-section">
+      <div class="container">
+          <div class="row text-center">
+              <div class="col-md-12">
+                  <h2>What we do</h2>
+                  
+              </div><!-- /.col-md-12 -->
+
+              <div class="container">
+                  <div class="row text-center">
+                      <div class="col-md-4">
+                          <div class="row services-item text-center wow flipInX" data-wow-offset="10">
+                              <i class="fa fa-cogs fa-3x"></i>
+                              <h4>Development</h4>
+                              <p>We build Wordpress and custom plugins and back-end solutions.</p>
+                          </div><!-- /.row -->
+                      </div><!-- /.col-md-4 -->
+
+                      <div class="col-md-4">
+                          <div class="row services-item text-center wow flipInX" data-wow-offset="10">
+                              <i class="fa fa-paint-brush fa-3x"></i>
+                              <h4>UI/UX</h4>
+                              <p>We love creating beautiful and functional designs for our clients</p>
+                          </div><!-- /.row -->
+                      </div><!-- /.col-md-4 -->
+
+                      <div class="col-md-4">
+                          <div class="row services-item text-center wow flipInX" data-wow-offset="10">
+                              <i class="fa fa-bullhorn fa-3x"></i>
+                              <h4>Social Marketing</h4>
+                              <p>Discover social marketing and take your business to new heights</p>
+                          </div><!-- /.row -->
+                      </div><!-- /.col-md-4 -->
+
+                      <div class="col-md-4">
+                          <div class="row services-item text-center wow flipInX" data-wow-offset="20">
+                              <i class="fa fa-database fa-3x"></i>
+                              <h4>System Design</h4>
+                              <p>Every website needs the right environment if it plans to be successful</p>
+                          </div><!-- /.row -->
+                      </div><!-- /.col-md-4 -->
+
+                      <div class="col-md-4">
+                          <div class="row services-item text-center wow flipInX" data-wow-offset="20">
+                              <i class="fa fa-align-left fa-3x"></i>
+                              <h4>Copywriting</h4>
+                              <p>What you say and how you say it is as important as everything else</p>
+                          </div><!-- /.row -->
+                      </div><!-- /.col-md-4 -->
+
+                      <div class="col-md-4">
+                          <div class="row services-item text-center wow flipInX" data-wow-offset="20">
+                              <i class="fa fa-camera fa-3x"></i>
+                              <h4>Photography</h4>
+                              <p>Specializing in product and photo journalistic style photography</p>
+                          </div><!-- /.row -->
+                      </div><!-- /.col-md-4 -->
+
+                  </div><!-- /.row -->
+              </div><!-- /.container -->
+
+          </div><!-- /.row -->
+      </div><!-- /.container -->
+  </section><!-- /.section -->
 
     <!-- Jquery, Bootstrap Integrated and minified JS -->
     <script src="js/vendor.min.js" type="text/javascript"></script>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $('.carousel').carousel({
+    interval: 2000
+    })
+    </script>
+
+
 
 </body>
 
